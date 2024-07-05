@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="redwConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="redwConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Exp_Reports.Properties.Settings.GlobalReference.Default.redwConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INVOICE" msprop:Generator_TableClassName="INVOICEDataTable" msprop:Generator_TableVarName="tableINVOICE" msprop:Generator_TablePropName="INVOICE" msprop:Generator_RowDeletingName="INVOICERowDeleting" msprop:Generator_RowChangingName="INVOICERowChanging" msprop:Generator_RowEvHandlerName="INVOICERowChangeEventHandler" msprop:Generator_RowDeletedName="INVOICERowDeleted" msprop:Generator_UserTableName="INVOICE" msprop:Generator_RowChangedName="INVOICERowChanged" msprop:Generator_RowEvArgName="INVOICERowChangeEvent" msprop:Generator_RowClassName="INVOICERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="inviceNumber" msprop:Generator_ColumnVarNameInTable="columninviceNumber" msprop:Generator_ColumnPropNameInRow="inviceNumber" msprop:Generator_ColumnPropNameInTable="inviceNumberColumn" msprop:Generator_UserColumnName="inviceNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" minOccurs="0" />
+              <xs:element name="itemID" msprop:Generator_ColumnVarNameInTable="columnitemID" msprop:Generator_ColumnPropNameInRow="itemID" msprop:Generator_ColumnPropNameInTable="itemIDColumn" msprop:Generator_UserColumnName="itemID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEMS" msprop:Generator_TableClassName="ITEMSDataTable" msprop:Generator_TableVarName="tableITEMS" msprop:Generator_RowChangedName="ITEMSRowChanged" msprop:Generator_TablePropName="ITEMS" msprop:Generator_RowDeletingName="ITEMSRowDeleting" msprop:Generator_RowChangingName="ITEMSRowChanging" msprop:Generator_RowEvHandlerName="ITEMSRowChangeEventHandler" msprop:Generator_RowDeletedName="ITEMSRowDeleted" msprop:Generator_RowClassName="ITEMSRow" msprop:Generator_UserTableName="ITEMS" msprop:Generator_RowEvArgName="ITEMSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="items_name" msprop:Generator_ColumnVarNameInTable="columnitems_name" msprop:Generator_ColumnPropNameInRow="items_name" msprop:Generator_ColumnPropNameInTable="items_nameColumn" msprop:Generator_UserColumnName="items_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemTypeID" msprop:Generator_ColumnVarNameInTable="columnitemTypeID" msprop:Generator_ColumnPropNameInRow="itemTypeID" msprop:Generator_ColumnPropNameInTable="itemTypeIDColumn" msprop:Generator_UserColumnName="itemTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="thenumber" msprop:Generator_ColumnVarNameInTable="columnthenumber" msprop:Generator_ColumnPropNameInRow="thenumber" msprop:Generator_ColumnPropNameInTable="thenumberColumn" msprop:Generator_UserColumnName="thenumber" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEMS1" msprop:Generator_TableClassName="ITEMS1DataTable" msprop:Generator_TableVarName="tableITEMS1" msprop:Generator_TablePropName="ITEMS1" msprop:Generator_RowDeletingName="ITEMS1RowDeleting" msprop:Generator_RowChangingName="ITEMS1RowChanging" msprop:Generator_RowEvHandlerName="ITEMS1RowChangeEventHandler" msprop:Generator_RowDeletedName="ITEMS1RowDeleted" msprop:Generator_UserTableName="ITEMS1" msprop:Generator_RowChangedName="ITEMS1RowChanged" msprop:Generator_RowEvArgName="ITEMS1RowChangeEvent" msprop:Generator_RowClassName="ITEMS1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="items_name" msprop:Generator_ColumnVarNameInTable="columnitems_name" msprop:Generator_ColumnPropNameInRow="items_name" msprop:Generator_ColumnPropNameInTable="items_nameColumn" msprop:Generator_UserColumnName="items_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemTypeID" msprop:Generator_ColumnVarNameInTable="columnitemTypeID" msprop:Generator_ColumnPropNameInRow="itemTypeID" msprop:Generator_ColumnPropNameInTable="itemTypeIDColumn" msprop:Generator_UserColumnName="itemTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="thenumber" msprop:Generator_ColumnVarNameInTable="columnthenumber" msprop:Generator_ColumnPropNameInRow="thenumber" msprop:Generator_ColumnPropNameInTable="thenumberColumn" msprop:Generator_UserColumnName="thenumber" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INVOICE" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="ITEMS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ITEMS" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="ITEMS1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ITEMS1" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
